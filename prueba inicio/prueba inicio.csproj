@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FB6F639-E487-4A10-92EE-DF1D346C4462}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>prueba_inicio</RootNamespace>
+    <AssemblyName>prueba inicio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Facturas\FormActualizarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\FormActualizarFactura.Designer.cs">
+      <DependentUpon>FormActualizarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas\FormCrearFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas\FormCrearFactura.Designer.cs">
+      <DependentUpon>FormCrearFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\FormActualizarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\FormActualizarProveedor.Designer.cs">
+      <DependentUpon>FormActualizarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor\FormCrearProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor\FormCrearProveedor.Designer.cs">
+      <DependentUpon>FormCrearProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodo PAgo\FormActualizarMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodo PAgo\FormActualizarMetodoPago.Designer.cs">
+      <DependentUpon>FormActualizarMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FormCrearCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FormCrearCliente.Designer.cs">
+      <DependentUpon>FormCrearCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\FormActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\FormActualizarCliente.Designer.cs">
+      <DependentUpon>FormActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FormActualizarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FormActualizarEmpleado.Designer.cs">
+      <DependentUpon>FormActualizarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado\FormCrearEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleado\FormCrearEmpleado.Designer.cs">
+      <DependentUpon>FormCrearEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodo PAgo\FormCrearPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodo PAgo\FormCrearPago.Designer.cs">
+      <DependentUpon>FormCrearPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearPedido.Designer.cs">
+      <DependentUpon>FormCrearPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva\FormActualizarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reserva\FormActualizarReserva.Designer.cs">
+      <DependentUpon>FormActualizarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva\FormCrearReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reserva\FormCrearReserva.Designer.cs">
+      <DependentUpon>FormCrearReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platos\FormActualizarPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Platos\FormActualizarPlato.Designer.cs">
+      <DependentUpon>FormActualizarPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platos\FormCrearPlato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Platos\FormCrearPlato.Designer.cs">
+      <DependentUpon>FormCrearPlato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesas\FormActualizarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas\FormActualizarMesa.Designer.cs">
+      <DependentUpon>FormActualizarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesas\FormCrearMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas\FormCrearMesa.Designer.cs">
+      <DependentUpon>FormCrearMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCruds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCruds.Designer.cs">
+      <DependentUpon>FormCruds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Facturas\FormActualizarFactura.resx">
+      <DependentUpon>FormActualizarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas\FormCrearFactura.resx">
+      <DependentUpon>FormCrearFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\FormActualizarProveedor.resx">
+      <DependentUpon>FormActualizarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor\FormCrearProveedor.resx">
+      <DependentUpon>FormCrearProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodo PAgo\FormActualizarMetodoPago.resx">
+      <DependentUpon>FormActualizarMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FormActualizarCliente.resx">
+      <DependentUpon>FormActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\FormCrearCliente.resx">
+      <DependentUpon>FormCrearCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FormActualizarEmpleado.resx">
+      <DependentUpon>FormActualizarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado\FormCrearEmpleado.resx">
+      <DependentUpon>FormCrearEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodo PAgo\FormCrearPago.resx">
+      <DependentUpon>FormCrearPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearPedido.resx">
+      <DependentUpon>FormCrearPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserva\FormActualizarReserva.resx">
+      <DependentUpon>FormActualizarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserva\FormCrearReserva.resx">
+      <DependentUpon>FormCrearReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platos\FormActualizarPlato.resx">
+      <DependentUpon>FormActualizarPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platos\FormCrearPlato.resx">
+      <DependentUpon>FormCrearPlato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesas\FormActualizarMesa.resx">
+      <DependentUpon>FormActualizarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesas\FormCrearMesa.resx">
+      <DependentUpon>FormCrearMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCruds.resx">
+      <DependentUpon>FormCruds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
